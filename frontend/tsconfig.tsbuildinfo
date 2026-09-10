@@ -1,0 +1,1 @@
+{"root":["./src/main.tsx","./src/vite-env.d.ts","./src/components/webterminal.tsx","./src/pages/opsworkspace.tsx","./src/utils/webshellclient.ts","./vite.config.ts"],"version":"5.9.3"}

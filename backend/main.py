@@ -9,6 +9,9 @@ from app.core import security
 from app.api import auth, users, scans, agent_ws, web_shell
 from app.routers import network_scanner
 from app.routers import phish_sim
+from app.api import web_shell
+from app.api import payloads
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -39,3 +42,5 @@ app.include_router(agent_ws.router)
 app.include_router(network_scanner.router)
 app.include_router(web_shell.router)
 app.include_router(phish_sim.router)
+app.include_router(web_shell.router)
+app.include_router(payloads.router)
